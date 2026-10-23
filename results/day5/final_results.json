@@ -1,0 +1,77 @@
+{
+  "mode": "full",
+  "plan_sha256": "6f5e4fd8ee39c2dc76f0b7b55c877d937467e894540ebf6c378934fb7201dc50",
+  "selected_by_validation": "resnet18_finetuned",
+  "test_evaluated": true,
+  "fixture_only": false,
+  "runs": [
+    {
+      "run": "cnn_baseline",
+      "test_accuracy": 0.7332123411978222,
+      "test_macro_f1": 0.7293090117435231,
+      "test_weighted_f1": 0.7312310579297955,
+      "test_loss": 0.7277658708298921,
+      "samples": 551,
+      "inference_seconds": 2.704277871000045,
+      "checkpoint_sha256": "007efbe8f72d0933d5b2d4d1758853355b05ff7bfd312c6b2afb61b863d9b36d",
+      "selected_before_test": false
+    },
+    {
+      "run": "cnn_augmented",
+      "test_accuracy": 0.7277676950998185,
+      "test_macro_f1": 0.7206774700025013,
+      "test_weighted_f1": 0.7239658340076979,
+      "test_loss": 0.7438821264706592,
+      "samples": 551,
+      "inference_seconds": 2.6136822999999367,
+      "checkpoint_sha256": "97e1cb1016430d7f9ca90d8ad67bd36575d35c4a92c59ee5ee75b62f474f0002",
+      "selected_before_test": false
+    },
+    {
+      "run": "resnet18_head",
+      "test_accuracy": 0.8947368421052632,
+      "test_macro_f1": 0.8928032771011363,
+      "test_weighted_f1": 0.8948071368424029,
+      "test_loss": 0.3197198803325314,
+      "samples": 551,
+      "inference_seconds": 2.9169849330000943,
+      "checkpoint_sha256": "3c2598bd3f105c393bfc17af4deb134733e8c6c103146a99371246add9f1e541",
+      "selected_before_test": false
+    },
+    {
+      "run": "resnet18_finetuned",
+      "test_accuracy": 0.9509981851179673,
+      "test_macro_f1": 0.9494408183608014,
+      "test_weighted_f1": 0.9507124314963414,
+      "test_loss": 0.16616317232945654,
+      "samples": 551,
+      "inference_seconds": 2.9674806219999255,
+      "checkpoint_sha256": "f7367786fc3828752b77105cc8c4b4db8ea79e3fc98df5413ecec58305dc6dcc",
+      "selected_before_test": true
+    },
+    {
+      "run": "resnet18_control",
+      "test_accuracy": 0.9546279491833031,
+      "test_macro_f1": 0.9530193967432694,
+      "test_weighted_f1": 0.9543662428095653,
+      "test_loss": 0.1570386939678686,
+      "samples": 551,
+      "inference_seconds": 3.0166316609999058,
+      "checkpoint_sha256": "d39407e8531a33eed62a043488cbe7f1c00bb10cb0cfacde6d895e8871fb7dd1",
+      "selected_before_test": false
+    },
+    {
+      "run": "resnet18_crop",
+      "test_accuracy": 0.9600725952813067,
+      "test_macro_f1": 0.9577340943629276,
+      "test_weighted_f1": 0.9596545033394586,
+      "test_loss": 0.1578746765426034,
+      "samples": 551,
+      "inference_seconds": 3.3358265340000344,
+      "checkpoint_sha256": "dd0dcbe50d66530845144b75480454c6895e9a2a2911358b3f6527e4936fff3c",
+      "selected_before_test": false
+    }
+  ],
+  "selection_changed_after_test": false,
+  "preprocessing": "RGB/EXIF; Resize(256); CenterCrop(224); ImageNet mean/std"
+}

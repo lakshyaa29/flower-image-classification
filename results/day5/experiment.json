@@ -1,0 +1,24 @@
+{
+  "mode": "full",
+  "epochs": 6,
+  "batch_size": 32,
+  "seed": 42,
+  "num_workers": 2,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.0001,
+  "control_crop_scale": [
+    0.75,
+    1.0
+  ],
+  "treatment_crop_scale": [
+    0.5,
+    1.0
+  ],
+  "parent_checkpoint_sha256": "f7367786fc3828752b77105cc8c4b4db8ea79e3fc98df5413ecec58305dc6dcc",
+  "manifest_sha256": "4fc79e62cb179ff75a18772ba16f72e091184263e6fb8f4731819bbdc07c2dbb",
+  "source_day4": "outputs/day4/20261023T195709_381690Z",
+  "protocol_sha256": "6d264b61d6999e5c960729e3e17fd7cb8b2493f5de776bb46f29cd3c7a234664",
+  "proposed_fix": "Test stronger training scale augmentation by changing RandomResizedCrop from scale=(0.75, 1.0) to scale=(0.5, 1.0). This may improve recognition across flower sizes. Smaller crops can also exclude the flower, so this is a hypothesis to test. Keep all other settings and the original splits fixed, and compare validation macro-F1 before final test evaluation.",
+  "device": "cuda",
+  "budget_note": "Each Day 5 arm has six additional epochs by default, after the prior 12-epoch allocated transfer-learning budget. Same parent and settings; only crop scale differs."
+}

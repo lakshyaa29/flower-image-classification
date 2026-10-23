@@ -1,0 +1,83 @@
+{
+  "dataset": "Flower Photos",
+  "dataset_url": "https://storage.googleapis.com/download.tensorflow.org/example_images/flower_photos.tgz",
+  "source_archive_sha256": "4c54ace7911aaffe13a365c34f650e71dd5bf1be0a58b464e5a7183e3e595d9c",
+  "dataset_dir": "/content/flower-cnn/data/raw/flower_photos",
+  "seed": 42,
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "class_to_idx": {
+    "daisy": 0,
+    "dandelion": 1,
+    "roses": 2,
+    "sunflowers": 3,
+    "tulips": 4
+  },
+  "class_counts": {
+    "daisy": {
+      "train": 443,
+      "val": 95,
+      "test": 95
+    },
+    "dandelion": {
+      "train": 628,
+      "val": 135,
+      "test": 135
+    },
+    "roses": {
+      "train": 448,
+      "val": 96,
+      "test": 96
+    },
+    "sunflowers": {
+      "train": 487,
+      "val": 105,
+      "test": 105
+    },
+    "tulips": {
+      "train": 558,
+      "val": 120,
+      "test": 120
+    }
+  },
+  "split_counts": {
+    "val": 551,
+    "train": 2564,
+    "test": 551
+  },
+  "width_range": [
+    143,
+    1024
+  ],
+  "height_range": [
+    159,
+    442
+  ],
+  "manifest_sha256": "4fc79e62cb179ff75a18772ba16f72e091184263e6fb8f4731819bbdc07c2dbb",
+  "audit": {
+    "images_scanned": 3670,
+    "readable_images": 3670,
+    "usable_images": 3666,
+    "corrupt_images": [],
+    "excluded_duplicates": [
+      {
+        "kept": "sunflowers/14889392928_9742aed45b_m.jpg",
+        "excluded": "sunflowers/15066430311_fb57fa92b0_m.jpg"
+      },
+      {
+        "kept": "sunflowers/15069459615_7e0fd61914_n.jpg",
+        "excluded": "sunflowers/15072973261_73e2912ef2_n.jpg"
+      }
+    ],
+    "conflicting_label_groups": [
+      [
+        "roses/15922772266_1167a06620.jpg",
+        "tulips/15922772266_1167a06620.jpg"
+      ]
+    ],
+    "duplicate_detection": "Exact decoded RGB pixels; near duplicates are not detected."
+  }
+}

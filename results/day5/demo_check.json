@@ -1,0 +1,11 @@
+{
+  "method": "Automatic inference check on one training image",
+  "example": "daisy/10140303196_b88d3d6cec.jpg",
+  "selected_model": "resnet18_finetuned",
+  "five_scores_sum_to_one": true,
+  "heatmap_shape": [
+    224,
+    224,
+    3
+  ]
+}

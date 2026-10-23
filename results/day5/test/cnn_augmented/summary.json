@@ -1,0 +1,11 @@
+{
+  "run": "cnn_augmented",
+  "test_accuracy": 0.7277676950998185,
+  "test_macro_f1": 0.7206774700025013,
+  "test_weighted_f1": 0.7239658340076979,
+  "test_loss": 0.7438821264706592,
+  "samples": 551,
+  "inference_seconds": 2.6136822999999367,
+  "checkpoint_sha256": "97e1cb1016430d7f9ca90d8ad67bd36575d35c4a92c59ee5ee75b62f474f0002",
+  "selected_before_test": false
+}

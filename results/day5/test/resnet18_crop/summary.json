@@ -1,0 +1,11 @@
+{
+  "run": "resnet18_crop",
+  "test_accuracy": 0.9600725952813067,
+  "test_macro_f1": 0.9577340943629276,
+  "test_weighted_f1": 0.9596545033394586,
+  "test_loss": 0.1578746765426034,
+  "samples": 551,
+  "inference_seconds": 3.3358265340000344,
+  "checkpoint_sha256": "dd0dcbe50d66530845144b75480454c6895e9a2a2911358b3f6527e4936fff3c",
+  "selected_before_test": false
+}

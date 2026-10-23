@@ -1,0 +1,14 @@
+{
+  "mode": "full",
+  "split": "val",
+  "test_evaluated": false,
+  "seed": 42,
+  "batch_size": 32,
+  "num_workers": 2,
+  "selected_model": "resnet18_finetuned",
+  "requested_per_outcome": 20,
+  "manifest_sha256": "4fc79e62cb179ff75a18772ba16f72e091184263e6fb8f4731819bbdc07c2dbb",
+  "source_day3": "outputs/day3/20261023T190527_723814Z",
+  "device": "cpu",
+  "review_selection": "Round-robin true classes; seeded correct samples; highest-confidence errors within class."
+}

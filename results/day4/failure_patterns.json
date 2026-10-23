@@ -1,0 +1,72 @@
+{
+  "selected_model": "resnet18_finetuned",
+  "confusion_pairs": [
+    {
+      "true_class": "dandelion",
+      "predicted_class": "daisy",
+      "count": 7
+    },
+    {
+      "true_class": "roses",
+      "predicted_class": "tulips",
+      "count": 7
+    },
+    {
+      "true_class": "tulips",
+      "predicted_class": "roses",
+      "count": 5
+    },
+    {
+      "true_class": "daisy",
+      "predicted_class": "roses",
+      "count": 2
+    },
+    {
+      "true_class": "dandelion",
+      "predicted_class": "sunflowers",
+      "count": 2
+    },
+    {
+      "true_class": "sunflowers",
+      "predicted_class": "dandelion",
+      "count": 2
+    },
+    {
+      "true_class": "tulips",
+      "predicted_class": "dandelion",
+      "count": 2
+    },
+    {
+      "true_class": "daisy",
+      "predicted_class": "dandelion",
+      "count": 1
+    },
+    {
+      "true_class": "daisy",
+      "predicted_class": "sunflowers",
+      "count": 1
+    },
+    {
+      "true_class": "daisy",
+      "predicted_class": "tulips",
+      "count": 1
+    },
+    {
+      "true_class": "roses",
+      "predicted_class": "daisy",
+      "count": 1
+    },
+    {
+      "true_class": "sunflowers",
+      "predicted_class": "roses",
+      "count": 1
+    },
+    {
+      "true_class": "tulips",
+      "predicted_class": "daisy",
+      "count": 1
+    }
+  ],
+  "lowest_f1_class": "roses",
+  "note": "Confusion counts are measured; background bias and label problems require visual review."
+}

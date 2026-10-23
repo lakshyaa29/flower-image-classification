@@ -1,0 +1,40 @@
+{
+  "source_backup_filename": "day5_backup (1).zip",
+  "backup_sha256": "66372ea35f76de3b9f789f2546b1ebe26263b15f0a9dd07b5392e8fc1a1a1873",
+  "manifest_sha256": "4fc79e62cb179ff75a18772ba16f72e091184263e6fb8f4731819bbdc07c2dbb",
+  "day5_experiment": "outputs/day5/20261023T213253_024550Z",
+  "notebooks": [
+    {
+      "path": "notebooks/completed/01_data_preparation.ipynb",
+      "source_filename": "data_PREP.ipynb",
+      "original_sha256": "d658f2741d1b232ddba0d7c48146571594716ee0c6fe9c4ad786c064889b4359",
+      "published_sha256": "d28c2da277e0ab04864d8279db6dac58309346dc6936dbf5cd86bd63ce540746"
+    },
+    {
+      "path": "notebooks/completed/02_custom_cnn.ipynb",
+      "source_filename": "02_custom_cnn (1).ipynb",
+      "original_sha256": "a35571bdeded076915563e767e923a24e26f98ef80a7442c847d2fc4c1bf27dd",
+      "published_sha256": "019043a8050c285f77ca0a7752572ab2667716e224791ad09cd5ec3a45aa27cd"
+    },
+    {
+      "path": "notebooks/completed/03_resnet18_transfer.ipynb",
+      "source_filename": "03_resnet18_transfer (1).ipynb",
+      "original_sha256": "00cbafaa20b195b63db95619d3181640d178300ec0c2dd83c2bb85f8f5ae9507",
+      "published_sha256": "e4433d1a2bf4b13c621cf879332800c0bfa35de9f5c0c1e94a3922e649076906"
+    },
+    {
+      "path": "notebooks/completed/04_evaluation_gradcam.ipynb",
+      "source_filename": "04_evaluation_gradcam (1).ipynb",
+      "original_sha256": "e0d28eecb56620a1ffd21486b79abf0fad801c5f679523ca57f0f83c8b69b516",
+      "published_sha256": "d285a167ebba4379f1ad7456465355f9f19a482deaaccb74f682e43b79ea174a"
+    },
+    {
+      "path": "notebooks/completed/05_final_experiment_demo.ipynb",
+      "source_filename": "05_final_experiment_demo (1).ipynb",
+      "original_sha256": "2af0e2f314826addd3798680a4d7acedaa41687dffba6a58b96aa263a6b728fb",
+      "published_sha256": "6a37b771638766a4da39bd870462f4323637044ebfd51ec873620fe3cb93c6e1"
+    }
+  ],
+  "notebook_publication_cleanup": "Removed Colab authorship/provenance metadata and interactive widget state/views; preserved code, execution counts, metric/figure outputs, and observations.",
+  "helper_sources_match_final_backup": true
+}

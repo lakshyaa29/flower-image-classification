@@ -1,0 +1,23 @@
+{
+  "images_scanned": 3670,
+  "readable_images": 3670,
+  "usable_images": 3666,
+  "corrupt_images": [],
+  "excluded_duplicates": [
+    {
+      "kept": "sunflowers/14889392928_9742aed45b_m.jpg",
+      "excluded": "sunflowers/15066430311_fb57fa92b0_m.jpg"
+    },
+    {
+      "kept": "sunflowers/15069459615_7e0fd61914_n.jpg",
+      "excluded": "sunflowers/15072973261_73e2912ef2_n.jpg"
+    }
+  ],
+  "conflicting_label_groups": [
+    [
+      "roses/15922772266_1167a06620.jpg",
+      "tulips/15922772266_1167a06620.jpg"
+    ]
+  ],
+  "duplicate_detection": "Exact decoded RGB pixels; near duplicates are not detected."
+}

@@ -1,0 +1,37 @@
+{
+  "mode": "full",
+  "batch_size": 32,
+  "seed": 42,
+  "num_workers": 2,
+  "weight_decay": 0.0001,
+  "optimizer": "AdamW",
+  "device": "cuda",
+  "max_train_batches": null,
+  "max_val_batches": null,
+  "log_every": 20,
+  "scheduler": "CosineAnnealingLR",
+  "image_size": 224,
+  "model_name": "FlowerResNet18",
+  "gpu": "Tesla T4",
+  "pretrained_weights": "ResNet18_Weights.IMAGENET1K_V1",
+  "weights_url": "https://download.pytorch.org/models/resnet18-f37072fd.pth",
+  "pretrained_file_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+  "initial_backbone_sha256": "387d2fcf2b490b68150d589429e53a86bce701c8d676c544ec5a3aa4d34a665c",
+  "manifest_sha256": "4fc79e62cb179ff75a18772ba16f72e091184263e6fb8f4731819bbdc07c2dbb",
+  "class_to_idx": {
+    "daisy": 0,
+    "dandelion": 1,
+    "roses": 2,
+    "sunflowers": 3,
+    "tulips": 4
+  },
+  "split_counts": {
+    "train": 2564,
+    "val": 551,
+    "test": 551
+  },
+  "head_epochs": 6,
+  "fine_epochs": 6,
+  "day2_source": "outputs/day2/20261023T180719_403099Z",
+  "comparison_budget_note": "Frozen head uses its stage budget. Fine-tuning adds to that budget and starts from the best head checkpoint."
+}

@@ -1,0 +1,15 @@
+{
+  "run": "resnet18_crop",
+  "mode": "full",
+  "augmentation": true,
+  "epochs": 6,
+  "best_epoch": 5,
+  "val_accuracy": 0.9364791288566243,
+  "val_macro_f1": 0.9356990408874472,
+  "val_loss": 0.1986515262973801,
+  "training_seconds": 108.73790764399996,
+  "checkpoint": "/content/flower-cnn/outputs/day5/20261023T213253_024550Z/resnet18_crop/best.pt",
+  "manifest_sha256": "4fc79e62cb179ff75a18772ba16f72e091184263e6fb8f4731819bbdc07c2dbb",
+  "initial_state_sha256": "e4e6532c56c555f9dd708126948e87b6955b053bce88602a56f9624235198810",
+  "test_evaluated": false
+}

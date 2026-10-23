@@ -1,0 +1,82 @@
+{
+  "mode": "full",
+  "split": "val",
+  "test_evaluated": false,
+  "seed": 42,
+  "batch_size": 32,
+  "num_workers": 2,
+  "selected_model": "resnet18_finetuned",
+  "requested_per_outcome": 20,
+  "manifest_sha256": "4fc79e62cb179ff75a18772ba16f72e091184263e6fb8f4731819bbdc07c2dbb",
+  "source_day3": "outputs/day3/20261023T190527_723814Z",
+  "device": "cpu",
+  "review_selection": "Round-robin true classes; seeded correct samples; highest-confidence errors within class.",
+  "model_metrics": [
+    {
+      "run": "cnn_baseline",
+      "accuracy": 0.6805807622504537,
+      "macro_f1": 0.6740183538280524,
+      "weighted_f1": 0.6775742786103538,
+      "loss": 0.8167796108986635,
+      "samples": 551,
+      "correct": 375,
+      "incorrect": 176,
+      "inference_seconds": 28.169561951000105,
+      "checkpoint_sha256": "007efbe8f72d0933d5b2d4d1758853355b05ff7bfd312c6b2afb61b863d9b36d"
+    },
+    {
+      "run": "cnn_augmented",
+      "accuracy": 0.6751361161524501,
+      "macro_f1": 0.6667256294662008,
+      "weighted_f1": 0.6700835772493521,
+      "loss": 0.8673663589352921,
+      "samples": 551,
+      "correct": 372,
+      "incorrect": 179,
+      "inference_seconds": 18.136150170000064,
+      "checkpoint_sha256": "97e1cb1016430d7f9ca90d8ad67bd36575d35c4a92c59ee5ee75b62f474f0002"
+    },
+    {
+      "run": "resnet18_head",
+      "accuracy": 0.8475499092558983,
+      "macro_f1": 0.8460405357750703,
+      "weighted_f1": 0.8475694007287737,
+      "loss": 0.441613515145982,
+      "samples": 551,
+      "correct": 467,
+      "incorrect": 84,
+      "inference_seconds": 59.34846883199998,
+      "checkpoint_sha256": "3c2598bd3f105c393bfc17af4deb134733e8c6c103146a99371246add9f1e541"
+    },
+    {
+      "run": "resnet18_finetuned",
+      "accuracy": 0.9401088929219601,
+      "macro_f1": 0.939326408805519,
+      "weighted_f1": 0.9401797944446687,
+      "loss": 0.20070000467467006,
+      "samples": 551,
+      "correct": 518,
+      "incorrect": 33,
+      "inference_seconds": 56.98628216599991,
+      "checkpoint_sha256": "f7367786fc3828752b77105cc8c4b4db8ea79e3fc98df5413ecec58305dc6dcc"
+    }
+  ],
+  "correct_cases": 20,
+  "incorrect_cases": 20,
+  "review_target_met": true,
+  "manual_review_complete": false,
+  "model_state_unchanged": true,
+  "gradcam_target": "predicted class plus true class for errors",
+  "visual_review_complete": true,
+  "reviewer_counts": {
+    "human": 13,
+    "codex_visual": 27
+  },
+  "review_progress": {
+    "total": 40,
+    "reviewed": 40,
+    "remaining": 0,
+    "correct_reviewed": 20,
+    "incorrect_reviewed": 20
+  }
+}

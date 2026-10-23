@@ -1,0 +1,62 @@
+{
+  "analysis_split": "val",
+  "selected_model": "resnet18_finetuned",
+  "validation_accuracy": 0.9401088929219601,
+  "validation_macro_f1": 0.939326408805519,
+  "lowest_f1_class": "roses",
+  "top_confusion_pairs": [
+    {
+      "true_class": "dandelion",
+      "predicted_class": "daisy",
+      "count": 7
+    },
+    {
+      "true_class": "roses",
+      "predicted_class": "tulips",
+      "count": 7
+    },
+    {
+      "true_class": "tulips",
+      "predicted_class": "roses",
+      "count": 5
+    },
+    {
+      "true_class": "daisy",
+      "predicted_class": "roses",
+      "count": 2
+    },
+    {
+      "true_class": "dandelion",
+      "predicted_class": "sunflowers",
+      "count": 2
+    }
+  ],
+  "review_progress": {
+    "total": 40,
+    "reviewed": 40,
+    "remaining": 0,
+    "correct_reviewed": 20,
+    "incorrect_reviewed": 20
+  },
+  "reviewer_counts": {
+    "human": 13,
+    "codex_visual": 27
+  },
+  "incorrect_attention_counts": {
+    "flower": 13,
+    "background": 6,
+    "mixed": 1
+  },
+  "incorrect_pattern_counts": {
+    "image_quality": 2,
+    "clutter": 5,
+    "class_confusion": 6,
+    "background_candidate": 1,
+    "small_subject": 3,
+    "unclear_other": 2,
+    "label_ambiguity": 1
+  },
+  "failure_patterns_with_evidence": "The lowest validation F1 was for roses. The largest confusions were dandelion to daisy (7 images); roses to tulips (7 images); tulips to roses (5 images). In the AI-assisted review of 20 incorrect cases, 6 were tagged as similar-looking classes, 5 as clutter, and 3 as small or distant flowers. Some heatmaps highlighted surrounding objects rather than the flower. These observations suggest possible failure patterns but do not prove their causes.",
+  "one_proposed_fix_and_reason": "Test stronger training scale augmentation by changing RandomResizedCrop from scale=(0.75, 1.0) to scale=(0.5, 1.0). This may improve recognition across flower sizes. Smaller crops can also exclude the flower, so this is a hypothesis to test. Keep all other settings and the original splits fixed, and compare validation macro-F1 before final test evaluation.",
+  "limitations": "One split and seed; errors selected partly by confidence; review combines user and AI-assisted visual observations; Grad-CAM is approximate and independently normalized; softmax scores are uncalibrated; no test metrics yet."
+}

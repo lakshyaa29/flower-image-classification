@@ -1,0 +1,32 @@
+{
+  "mode": "full",
+  "epochs": 12,
+  "batch_size": 32,
+  "seed": 42,
+  "num_workers": 2,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "optimizer": "AdamW",
+  "device": "cuda",
+  "max_train_batches": null,
+  "max_val_batches": null,
+  "log_every": 20,
+  "scheduler": "CosineAnnealingLR",
+  "image_size": 224,
+  "gpu": "Tesla T4",
+  "python": "3.13.16",
+  "run": "cnn_augmented",
+  "augmentation": true,
+  "manifest_sha256": "4fc79e62cb179ff75a18772ba16f72e091184263e6fb8f4731819bbdc07c2dbb",
+  "initial_state_sha256": "ab04401e88d9a820433833d851506450c1fba4b99ab5cb98033f79d19a13363b",
+  "class_to_idx": {
+    "daisy": 0,
+    "dandelion": 1,
+    "roses": 2,
+    "sunflowers": 3,
+    "tulips": 4
+  },
+  "selection_metric": "validation_macro_f1",
+  "selection_tiebreak": "lower_validation_loss",
+  "trainable_parameters": 155541
+}

@@ -1,0 +1,80 @@
+{
+  "mode": "full",
+  "runs": [
+    {
+      "run": "cnn_baseline",
+      "val_accuracy": 0.6805807622504537,
+      "val_macro_f1": 0.6740183538280524,
+      "val_loss": 0.8167795841793399,
+      "stage_epochs": 12,
+      "allocated_total_epochs": 12,
+      "cumulative_seconds": 150.02683485300008,
+      "checkpoint": "outputs/day2/20261023T180719_403099Z/cnn_baseline/best.pt",
+      "validation_samples": 551
+    },
+    {
+      "run": "cnn_augmented",
+      "val_accuracy": 0.6751361161524501,
+      "val_macro_f1": 0.666725629466201,
+      "val_loss": 0.8673663876017728,
+      "stage_epochs": 12,
+      "allocated_total_epochs": 12,
+      "cumulative_seconds": 203.715148752,
+      "checkpoint": "outputs/day2/20261023T180719_403099Z/cnn_augmented/best.pt",
+      "validation_samples": 551
+    },
+    {
+      "run": "resnet18_head",
+      "val_accuracy": 0.8475499092558983,
+      "val_macro_f1": 0.8460405357750703,
+      "val_loss": 0.4416136062567117,
+      "stage_epochs": 6,
+      "allocated_total_epochs": 6,
+      "cumulative_seconds": 98.92651862100001,
+      "checkpoint": "outputs/day3/20261023T190527_723814Z/resnet18_head/best.pt",
+      "validation_samples": 551
+    },
+    {
+      "run": "resnet18_finetuned",
+      "val_accuracy": 0.9401088929219601,
+      "val_macro_f1": 0.9393264088055189,
+      "val_loss": 0.20069998080002147,
+      "stage_epochs": 6,
+      "allocated_total_epochs": 12,
+      "cumulative_seconds": 207.48951531800003,
+      "checkpoint": "outputs/day3/20261023T190527_723814Z/resnet18_finetuned/best.pt",
+      "validation_samples": 551
+    },
+    {
+      "run": "resnet18_control",
+      "val_accuracy": 0.9382940108892922,
+      "val_macro_f1": 0.9378881283834846,
+      "val_loss": 0.19502425559512432,
+      "stage_epochs": 6,
+      "allocated_total_epochs": 18,
+      "cumulative_seconds": 318.7413696990001,
+      "checkpoint": "outputs/day5/20261023T213253_024550Z/resnet18_control/best.pt",
+      "validation_samples": 551
+    },
+    {
+      "run": "resnet18_crop",
+      "val_accuracy": 0.9364791288566243,
+      "val_macro_f1": 0.9356990408874472,
+      "val_loss": 0.1986515262973801,
+      "stage_epochs": 6,
+      "allocated_total_epochs": 18,
+      "cumulative_seconds": 316.227422962,
+      "checkpoint": "outputs/day5/20261023T213253_024550Z/resnet18_crop/best.pt",
+      "validation_samples": 551
+    }
+  ],
+  "selected_by_validation": "resnet18_finetuned",
+  "selection_is_final": true,
+  "test_evaluated": false,
+  "selection_metric": "validation_macro_f1",
+  "tiebreak": "lower_validation_loss_then_existing_candidate",
+  "crop_macro_f1_change_vs_control": -0.002189087496037412,
+  "parent_initial_states_equal": true,
+  "protocol_sha256": "6d264b61d6999e5c960729e3e17fd7cb8b2493f5de776bb46f29cd3c7a234664",
+  "warning": "One seed; crop change may help or hurt. Selection uses validation only."
+}

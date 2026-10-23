@@ -1,0 +1,52 @@
+{
+  "mode": "full",
+  "selected_by_validation": "resnet18_finetuned",
+  "selection_is_final": true,
+  "candidates": [
+    {
+      "run": "cnn_baseline",
+      "checkpoint": "outputs/day2/20261023T180719_403099Z/cnn_baseline/best.pt",
+      "checkpoint_sha256": "007efbe8f72d0933d5b2d4d1758853355b05ff7bfd312c6b2afb61b863d9b36d",
+      "val_macro_f1": 0.6740183538280524,
+      "val_loss": 0.8167795841793399
+    },
+    {
+      "run": "cnn_augmented",
+      "checkpoint": "outputs/day2/20261023T180719_403099Z/cnn_augmented/best.pt",
+      "checkpoint_sha256": "97e1cb1016430d7f9ca90d8ad67bd36575d35c4a92c59ee5ee75b62f474f0002",
+      "val_macro_f1": 0.666725629466201,
+      "val_loss": 0.8673663876017728
+    },
+    {
+      "run": "resnet18_head",
+      "checkpoint": "outputs/day3/20261023T190527_723814Z/resnet18_head/best.pt",
+      "checkpoint_sha256": "3c2598bd3f105c393bfc17af4deb134733e8c6c103146a99371246add9f1e541",
+      "val_macro_f1": 0.8460405357750703,
+      "val_loss": 0.4416136062567117
+    },
+    {
+      "run": "resnet18_finetuned",
+      "checkpoint": "outputs/day3/20261023T190527_723814Z/resnet18_finetuned/best.pt",
+      "checkpoint_sha256": "f7367786fc3828752b77105cc8c4b4db8ea79e3fc98df5413ecec58305dc6dcc",
+      "val_macro_f1": 0.9393264088055189,
+      "val_loss": 0.20069998080002147
+    },
+    {
+      "run": "resnet18_control",
+      "checkpoint": "outputs/day5/20261023T213253_024550Z/resnet18_control/best.pt",
+      "checkpoint_sha256": "d39407e8531a33eed62a043488cbe7f1c00bb10cb0cfacde6d895e8871fb7dd1",
+      "val_macro_f1": 0.9378881283834846,
+      "val_loss": 0.19502425559512432
+    },
+    {
+      "run": "resnet18_crop",
+      "checkpoint": "outputs/day5/20261023T213253_024550Z/resnet18_crop/best.pt",
+      "checkpoint_sha256": "dd0dcbe50d66530845144b75480454c6895e9a2a2911358b3f6527e4936fff3c",
+      "val_macro_f1": 0.9356990408874472,
+      "val_loss": 0.1986515262973801
+    }
+  ],
+  "manifest_sha256": "4fc79e62cb179ff75a18772ba16f72e091184263e6fb8f4731819bbdc07c2dbb",
+  "preprocessing": "RGB/EXIF; Resize(256); CenterCrop(224); ImageNet mean/std",
+  "plan_sha256": "6f5e4fd8ee39c2dc76f0b7b55c877d937467e894540ebf6c378934fb7201dc50"
+}

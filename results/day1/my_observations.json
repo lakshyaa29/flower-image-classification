@@ -1,0 +1,7 @@
+{
+  "largest_and_smallest_classes": "Dandelions have the most usable images: 898. Daisies have the fewest: 633.",
+  "ambiguous_training_examples": "Some photos show distant flowers, multiple flowers, grayscale images, or unusual edited colours. These may be harder to classify.",
+  "possible_background_bias": "Some tulip photos include buildings and windmills. The model could learn these backgrounds instead of the flower's shape and appearance.",
+  "why_validation_and_test_are_separate": "Validation data helps us choose model settings and improvements. The test set stays separate for the final evaluation on images that did not guide those choices.",
+  "why_augmentation_is_training_only": "Augmentation adds variety to training images. Validation and test images use fixed preprocessing so evaluations remain consistent and comparable."
+}

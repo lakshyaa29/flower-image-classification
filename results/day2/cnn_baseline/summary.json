@@ -1,0 +1,15 @@
+{
+  "run": "cnn_baseline",
+  "mode": "full",
+  "augmentation": false,
+  "epochs": 12,
+  "best_epoch": 12,
+  "val_accuracy": 0.6805807622504537,
+  "val_macro_f1": 0.6740183538280524,
+  "val_loss": 0.8167795841793399,
+  "training_seconds": 150.02683485300008,
+  "checkpoint": "/content/flower-cnn/outputs/day2/20261023T180719_403099Z/cnn_baseline/best.pt",
+  "manifest_sha256": "4fc79e62cb179ff75a18772ba16f72e091184263e6fb8f4731819bbdc07c2dbb",
+  "initial_state_sha256": "ab04401e88d9a820433833d851506450c1fba4b99ab5cb98033f79d19a13363b",
+  "test_evaluated": false
+}

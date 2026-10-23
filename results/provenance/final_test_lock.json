@@ -1,0 +1,16 @@
+{
+  "plan_sha256": "6f5e4fd8ee39c2dc76f0b7b55c877d937467e894540ebf6c378934fb7201dc50",
+  "experiment": "outputs/day5/20261023T213253_024550Z",
+  "status": "complete",
+  "completed": {
+    "cnn_baseline": "099088e23a851c90f74ea0138b93961f0516d9fcaec052a3f7b50213785c9f82",
+    "cnn_augmented": "62a39890e58ec3679a6d6f6a4d46fa09738374c8a86c87af4a2cc1b2f058951c",
+    "resnet18_head": "687f8c1f5bce8e9733df3485c9f3ad2835983262ddcd524db675aae090fb66bb",
+    "resnet18_finetuned": "30e8384190ee4656fba1fc973d3388dbd9fdc855f2ec4333f8d1f69d06a50ed0",
+    "resnet18_control": "540230aaeb8a9ae5c4c57a4fd0cc099575b936af6196200f16b048accaaad54f",
+    "resnet18_crop": "89e5516c7c8c194c636d42ef90d081ee9b87846474bca27d042960c00086e8be"
+  },
+  "started_at_utc": "2026-10-23T21:36:40.250021+00:00",
+  "completed_at_utc": "2026-10-23T21:36:59.403613+00:00",
+  "results_sha256": "97bd1b6ff34c6313f6114ba6c028cf64650a287f601cba9ee400f8cde3f2ddeb"
+}

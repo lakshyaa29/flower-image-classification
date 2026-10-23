@@ -1,0 +1,17 @@
+{
+  "run": "resnet18_finetuned",
+  "checkpoint": "outputs/day3/20261023T190527_723814Z/resnet18_finetuned/best.pt",
+  "checkpoint_sha256": "f7367786fc3828752b77105cc8c4b4db8ea79e3fc98df5413ecec58305dc6dcc",
+  "val_macro_f1": 0.9393264088055189,
+  "val_loss": 0.20069998080002147,
+  "class_names": [
+    "daisy",
+    "dandelion",
+    "roses",
+    "sunflowers",
+    "tulips"
+  ],
+  "preprocessing": "RGB/EXIF; Resize(256); CenterCrop(224); ImageNet mean/std",
+  "selected_before_test": true,
+  "mode": "full"
+}

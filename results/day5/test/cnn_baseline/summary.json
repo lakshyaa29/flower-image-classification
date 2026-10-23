@@ -1,0 +1,11 @@
+{
+  "run": "cnn_baseline",
+  "test_accuracy": 0.7332123411978222,
+  "test_macro_f1": 0.7293090117435231,
+  "test_weighted_f1": 0.7312310579297955,
+  "test_loss": 0.7277658708298921,
+  "samples": 551,
+  "inference_seconds": 2.704277871000045,
+  "checkpoint_sha256": "007efbe8f72d0933d5b2d4d1758853355b05ff7bfd312c6b2afb61b863d9b36d",
+  "selected_before_test": false
+}

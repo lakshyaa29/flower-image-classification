@@ -1,0 +1,9 @@
+{
+  "baseline_val_macro_f1": 0.6740183538280524,
+  "augmented_val_macro_f1": 0.666725629466201,
+  "augmentation_macro_f1_difference": -0.007292724361851466,
+  "validation_selection": "cnn_baseline",
+  "what_the_curves_show": "Training and validation losses decreased overall for both models. Validation scores improved with some fluctuations. The baseline finished with lower validation loss.",
+  "augmentation_effect": "The baseline achieved validation macro-F1 of 0.6740, compared with 0.6667 for augmentation. Augmentation did not improve macro-F1 in this 12-epoch experiment.",
+  "one_limitation": "Only one random seed and one 12-epoch training budget were tested. The small performance difference may not generalize to other runs."
+}

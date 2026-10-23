@@ -1,0 +1,31 @@
+# Python and notebook caches
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Generated runtime artifacts and downloaded data
+/outputs/
+/data/raw/
+/data/pretrained/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.zip
+*.tgz
+*.tar.gz
+*.restoring
+
+# Local settings and secrets
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

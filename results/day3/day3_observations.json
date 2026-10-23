@@ -1,0 +1,10 @@
+{
+  "best_custom_cnn": "cnn_baseline",
+  "best_custom_cnn_val_macro_f1": 0.6740183538280524,
+  "head_val_macro_f1": 0.8460405357750703,
+  "fine_tuned_val_macro_f1": 0.9393264088055189,
+  "fine_tuning_macro_f1_change": 0.09328587303044855,
+  "validation_selection": "resnet18_finetuned",
+  "what_improved_and_why": "The best custom CNN achieved validation macro-F1 of 0.6740. The frozen ResNet18 head achieved 0.8460, and full fine-tuning improved this to 0.9393. These results are consistent with useful pretrained features and further adaptation to flower images. The different model architectures also affect this comparison.",
+  "stability_and_limitations": "Training and validation losses decreased overall. Both ResNet18 stages achieved their best validation macro-F1 at epoch 5, then declined slightly at epoch 6 while training loss continued falling. This suggests possible late overfitting. Only one seed was tested. The frozen head received six epochs, while the fine-tuned model received a cumulative twelve-epoch budget. ResNet18 also benefited from prior ImageNet training."
+}

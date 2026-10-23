@@ -1,0 +1,27 @@
+{
+  "mode": "full",
+  "controlled_change": "Training crop scale (0.75, 1.0) to (0.5, 1.0).",
+  "crop_validation_macro_f1_change_vs_control": -0.002189087496037412,
+  "crop_result": "Lower validation macro-F1 than matched continued training; the proposed fix did not improve this metric.",
+  "selected_before_test": "resnet18_finetuned",
+  "selected_test_accuracy": 0.9509981851179673,
+  "selected_test_macro_f1": 0.9494408183608014,
+  "selection_changed_after_test": false,
+  "test_evaluated": true,
+  "day4_review_attribution": {
+    "human": 13,
+    "codex_visual": 27
+  },
+  "limitations": "One seed; diagnostic case selection; mixed user/AI visual review; different pretraining and allocated budgets; Grad-CAM is approximate; scores are uncalibrated; smaller crops can exclude flowers.",
+  "demo_check": {
+    "method": "Automatic inference check on one training image",
+    "example": "daisy/10140303196_b88d3d6cec.jpg",
+    "selected_model": "resnet18_finetuned",
+    "five_scores_sum_to_one": true,
+    "heatmap_shape": [
+      224,
+      224,
+      3
+    ]
+  }
+}

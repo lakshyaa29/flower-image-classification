@@ -1,0 +1,14 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.txt text eol=lf
+
+# Preserve exact artifact bytes: the frozen protocol records their SHA-256.
+data/processed/* -text
+results/** -text
+notebooks/**/*.ipynb -text
+notebooks/*.ipynb -text
+*.png binary
+*.jpg binary
+*.pdf binary

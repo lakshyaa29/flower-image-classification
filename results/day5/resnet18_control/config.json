@@ -1,0 +1,40 @@
+{
+  "mode": "full",
+  "epochs": 6,
+  "batch_size": 32,
+  "num_workers": 2,
+  "seed": 42,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.0001,
+  "device": "cuda",
+  "model_name": "FlowerResNet18",
+  "stage": "finetune",
+  "optimizer": "AdamW",
+  "scheduler": "CosineAnnealingLR",
+  "image_size": 224,
+  "max_train_batches": null,
+  "max_val_batches": null,
+  "log_every": 20,
+  "parent_run": "resnet18_finetuned",
+  "parent_best_epoch": 5,
+  "parent_checkpoint_sha256": "f7367786fc3828752b77105cc8c4b4db8ea79e3fc98df5413ecec58305dc6dcc",
+  "parent_model_sha256": "e4e6532c56c555f9dd708126948e87b6955b053bce88602a56f9624235198810",
+  "crop_scale": [
+    0.75,
+    1.0
+  ],
+  "run": "resnet18_control",
+  "augmentation": true,
+  "manifest_sha256": "4fc79e62cb179ff75a18772ba16f72e091184263e6fb8f4731819bbdc07c2dbb",
+  "initial_state_sha256": "e4e6532c56c555f9dd708126948e87b6955b053bce88602a56f9624235198810",
+  "class_to_idx": {
+    "daisy": 0,
+    "dandelion": 1,
+    "roses": 2,
+    "sunflowers": 3,
+    "tulips": 4
+  },
+  "selection_metric": "validation_macro_f1",
+  "selection_tiebreak": "lower_validation_loss",
+  "trainable_parameters": 11179077
+}

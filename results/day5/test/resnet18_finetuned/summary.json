@@ -1,0 +1,11 @@
+{
+  "run": "resnet18_finetuned",
+  "test_accuracy": 0.9509981851179673,
+  "test_macro_f1": 0.9494408183608014,
+  "test_weighted_f1": 0.9507124314963414,
+  "test_loss": 0.16616317232945654,
+  "samples": 551,
+  "inference_seconds": 2.9674806219999255,
+  "checkpoint_sha256": "f7367786fc3828752b77105cc8c4b4db8ea79e3fc98df5413ecec58305dc6dcc",
+  "selected_before_test": true
+}
